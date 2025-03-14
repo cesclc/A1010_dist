@@ -1,7 +1,7 @@
 ---
 title: "Lab Exercise: Custom Instructions in Cursor"
 subtitle: "Practice Creating and Using .cursorrules"
-author: Peter Munro
+author: Mike Burton      17-19 March 2025
 ---
 
 ## Overview

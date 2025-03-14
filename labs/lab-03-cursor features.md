@@ -1,4 +1,4 @@
-# Lab Exercise 2: Advanced Cursor Features
+# Lab Exercise 3: Advanced Cursor Features
 
 __Objective__: Master advanced features of Cursor AI IDE to enhance your coding workflow and productivity.
 

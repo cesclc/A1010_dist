@@ -1,7 +1,7 @@
 ---
 title: "Lab Exercise: Getting Started with v0"
 subtitle: "Hands-on practice with v0.dev"
-author: Peter Munro
+author: Mike Burton      17-19 March 2025
 ---
 
 ## Exercise 1: Your First v0 Component

@@ -1,10 +1,10 @@
 ---
-title: "Lab 3A: Prompt Engineering for Development"
+title: "Lab 4: Prompt Engineering for Development"
 subtitle: "Learning to Write Effective Prompts for AI Coding Assistants"
-author: Peter Munro
+author: Mike Burton      17-19 March 2025
 ---
 
-# Lab 3A: Prompt Engineering for Development
+# Lab 4: Prompt Engineering for Development
 
 ## Overview
 

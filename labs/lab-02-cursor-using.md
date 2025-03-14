@@ -1,4 +1,4 @@
-# Lab Exercise 1: Getting Started with Cursor.
+# Lab Exercise 2: Getting Started with Cursor.
 
 __Objective__: Learn the fundamental features of Cursor AI IDE and become comfortable with basic interactions.
 
