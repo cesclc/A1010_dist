@@ -11,7 +11,7 @@ In this lab, you'll practice creating and using custom instructions for Cursor A
 ## Exercise 1: Global Custom Instructions
 
 1. In Cursor, you can specify global custom instructions:
-    - Go to `Cursor Settings` > `Rules` > `UserRules`
+    - Go to `Cursor Settings` > `Rules` > `User Rules`
 2. Enter these instructions:
 
 ```plaintext
