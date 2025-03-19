@@ -11,17 +11,15 @@
 #    from: error: can't find Rust compiler  (rust not supported on OS 10.9.5, rustup command fails
 #    SO give up and use Ubuntu!
 
-notebook  # Comments are also allowed after like this
-openai
-python-dotenv
-
-# For testing not needed for live running:
-pytest
-
-# Other platforms, for live running only need the chosen one from (below + openAI)
-llamaapi
-mistralai
-anthropic  # For Anthropic LLMs (and via AWS)
+flask==3.0.2
+flask-cors==4.0.0
+flask-limiter==3.5.0
+pytest==8.0.2
+python-dotenv==1.0.1
+anthropic==0.18.1
+openai==1.12.0
+mistralai==0.0.10
+llama-api==0.1.0
 
 seaborn
 # Added for images:
