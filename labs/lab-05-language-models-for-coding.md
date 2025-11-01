@@ -1,4 +1,4 @@
-# Working with Language Models for Coding
+# Lab Exercise 5: Working with Language Models for Coding
 
 ## Exercise 1: Hallucination Detection
 

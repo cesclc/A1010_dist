@@ -1,9 +1,4 @@
----
-title: "Building a Star Catalog Search System Using AI Assistance"
-subtitle: "Lab Exercise: Leveraging AI for Data Ingestion and RESTful API Implementation"
-author: Mike Burton      17-19 March 2025
----
-# Building a Star Catalog Search System Using AI Assistance
+# Lab Exercise 7: Building a Star Catalog Search System Using AI Assistance
 
 ## Overview
 

@@ -37,7 +37,7 @@ Use the AI tool to perform the following steps
 ### Part 4: (if time permits) Invoking LLM from code
 
 1. Note that some LLM versions and choices might not be available from readily available online apps / pages. In such cases the LLM can be invoked from your code via an API, as detailed in the individual LLM documentation.
-2. The best environment for this is Python with Jupyter Notebook, though LangChain4J and SpringAI are possible alternatives. 
+2. The best environment for this is Python with Jupyter Notebook, though JavaScript LangChain4J and SpringAI are possible alternatives. 
 3. Explore documentation for setting up your environment (Jupyter Notebook etc) using your simple AI tool such as Perplexity of course!
 4. Write some code to choose and invoke the specific LLM.
 5. Refer to the API key details provided by your instructor.

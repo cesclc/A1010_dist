@@ -1,10 +1,4 @@
----
-title: "Lab Exercise: Getting Started with v0"
-subtitle: "Hands-on practice with v0.dev"
-author: Mike Burton      17-19 March 2025
----
-
-## Exercise 1: Your First v0 Component
+# Lab Exercise B: Your First v0 Component
 
 In this exercise, you'll create your first component using v0's text-to-UI capabilities.
 

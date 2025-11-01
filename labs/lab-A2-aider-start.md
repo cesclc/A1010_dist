@@ -1,4 +1,4 @@
-# Lab Exercise: Using aider
+# Lab Exercise A: Using aider
 
 __Objective__: Use aider to complete coding tasks. 
 

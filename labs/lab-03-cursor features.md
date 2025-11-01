@@ -1,9 +1,11 @@
-# Lab Exercise 3: Advanced Cursor Features
+# Lab Exercise 3: Advanced Features of AI Development tools
+
+This exercice focusses on Cursor but feel free to use another tool such as Github Copilot, Windsurf or Claude Code.
 
 __Objective__: Master advanced features of Cursor AI IDE to enhance your coding workflow and productivity.
 
 ## Prerequisites
-- Completion of Lab Exercise 1: Getting Started with Cursor
+- Completion of Lab Exercise 1: Getting Started with AI Dev Tools
 - Basic understanding of Git and collaborative coding
 - A sample project with multiple files (provided in setup)
 
@@ -126,7 +128,7 @@ class Config(BaseSettings):
 
 ### Part 3: Advanced Debugging Assistance
 
-1. Add this intentionally buggy code to `utils.py`:
+1. Add this intentionally buggy code to `utils.py` , and take a copy of it for later comparison:
 ```python
 def calculate_statistics(numbers):
     stats = {
@@ -211,6 +213,8 @@ def api_call(url: str):
    - Check for PEP 8 compliance
    - Identify error handling problems
    - Suggest improvements for type safety
+   - Ask Cursor to suggest further improvements
+   - Ask Cursor to suggest improvements to the original copy you took, and compare against the work you did in the above steps
 
 <details>
 <summary>Reveal Solution</summary>

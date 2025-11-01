@@ -1,10 +1,4 @@
----
-title: "Lab 4: Prompt Engineering for Development"
-subtitle: "Learning to Write Effective Prompts for AI Coding Assistants"
-author: Mike Burton      17-19 March 2025
----
-
-# Lab 4: Prompt Engineering for Development
+# Lab Exercise 4: Prompt Engineering for Development
 
 ## Overview
 

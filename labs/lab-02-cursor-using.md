@@ -1,9 +1,11 @@
-# Lab Exercise 2: Getting Started with Cursor.
+# Lab Exercise 2: Getting Started with AI Dev Tools
 
-__Objective__: Learn the fundamental features of Cursor AI IDE and become comfortable with basic interactions.
+__Objective__: Learn the fundamental features of an AI Dev tool (eg Cursor) and become comfortable with basic interactions.
+
+This exercice focusses on Cursor but feel free to use another tool such as Github Copilot, Windsurf or Claude Code.
 
 ## Prerequisites
-- Cursor IDE installed on your computer
+- AI IDE such as Cursor installed on your computer
 - Basic familiarity with code editing
 
 ## Exercise Overview
@@ -114,6 +116,7 @@ Learn to use Cursor's integrated terminal and Terminal CMD-K feature.
 ```bash
 # Create virtual environment
 python -m venv venv
+# (or `python3` on Mac if default Python is version 2)
 
 # Activate it (Windows)
 .\venv\Scripts\activate
