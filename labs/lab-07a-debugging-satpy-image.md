@@ -1,4 +1,4 @@
-# Lab Exercise 7a: Debugging Satpy image display Using AI Assistance
+# Lab Exercise 7a: Debugging Satpy image display Using AI Assistance 
 
 ## Overview:
 
