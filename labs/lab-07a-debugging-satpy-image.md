@@ -50,7 +50,7 @@ Knowledge of Python, Jupyter Notebook, configuration of its libraries and virtua
 4. Once the code is working, extend it to also load and display Air Mass details. Add any other details that you can find.
 <details>
 <summary>Reveal Solution</summary>
-See `codeSample/ex7_solution01.py`
+See `codeSamples/ex7_solution01.py`
 </details>
 
 5. Try a different AI Dev tool, and compare differences in performance.
@@ -63,19 +63,19 @@ See `codeSample/ex7_solution01.py`
   - Ask the AI Dev tool that you used to debug this code, this will have more insight / context.
 <details>
 <summary>Reveal Solution</summary>
-See `codeSample/ex7_solution02.txt`
+See `codeSamples/ex7_solution02.txt`
 </details>
 
 - Generate a description of the ABI data format and content
 <details>
 <summary>Reveal Solution</summary>
-See `codeSample/ex7_solution03.txt`
+See `codeSamples/ex7_solution03.txt`
 </details>
 
 - Determine other attributes to display
 <details>
 <summary>Reveal Solution</summary>
-See `codeSample/ex7_solution04.py`
+See `codeSamples/ex7_solution04.py`
 </details>
 
 - Use you AI Dev tool to help you design a web app to productionise the image cration and display
