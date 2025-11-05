@@ -1,0 +1,17 @@
+commit f01d48dad881a1e98d8fcfe318867ae60c25c188
+Author: MikeB <mikeb@mycosystems.co.uk>
+Date:   Fri Oct 24 22:27:05 2025 +0100
+
+    added persistence (simple .json file)
+
+commit a01031a03f255919d43e1abce78ec5471afcbbba
+Author: MikeB <mikeb@mycosystems.co.uk>
+Date:   Fri Oct 24 22:20:13 2025 +0100
+
+    Prev commit msg was wrong, not .40 but USD 2.40.  Now added 'user list' component
+
+commit 24f6fff9272405b3f5b41850072f9faa5b9e1b77
+Author: MikeB <mikeb@mycosystems.co.uk>
+Date:   Fri Oct 24 21:59:04 2025 +0100
+
+    Working version, Claude Code did well, but cost .40 in 1h dev session

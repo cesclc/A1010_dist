@@ -1,0 +1,15 @@
+Ursula:spring-petclinic mikeburton$ git log
+
+commit f39d5910c9a44606f94813ae2ca66bc9deb5bd28 (HEAD -> run02)
+Author: MikeB <mikeb@mycosystems.co.uk>
+Date:   Tue Oct 21 23:49:29 2025 +0100
+
+    Finished big cursor adventure now native app runs, SpringBoot 3.5.6 , java 17.0.12-graal, startup took 0.3 secs cf 6.5 for jar version
+
+commit ab9142cd3874411f3c102cf43d3d64d1d21adc54
+Author: MikeB <mikeb@mycosystems.co.uk>
+Date:   Tue Oct 21 14:39:57 2025 +0100
+
+    Initial commit of working Pet Clinic app
+
+    

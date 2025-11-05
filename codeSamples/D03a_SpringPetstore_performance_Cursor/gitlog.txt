@@ -1,0 +1,13 @@
+Ursula:spring-petclinic mikeburton$ git log
+
+commit c4107af6f6166f5ac1a616c6d7391bf1fc7a59ff (HEAD -> main)
+Author: MikeB <mikeb@mycosystems.co.uk>
+Date:   Tue Oct 21 15:54:08 2025 +0100
+
+    Long conversation with Cursor attempt to reduce startup from 6 sec, broke it, eventually after long slog fixed it (and needed Java 17 and skip COMPILATION of tests ie mvn -Dmaven.test.skip=true not just -DskipTests. Which ADDED 1 sec to startup. Then finally by lazy loading etc got it back to 6 seconds (probably earlier Java25 build was faster anyway) TODO point it to AOT cache, that should HALVE the sa=tartup time
+
+commit ab9142cd3874411f3c102cf43d3d64d1d21adc54
+Author: MikeB <mikeb@mycosystems.co.uk>
+Date:   Tue Oct 21 14:39:57 2025 +0100
+
+    Initial commit of working Pet Clinic app

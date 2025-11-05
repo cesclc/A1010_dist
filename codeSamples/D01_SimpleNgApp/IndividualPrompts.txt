@@ -1,0 +1,20 @@
+Create an Angular app to input the users name, email and phone.
+    (Ignore ..patch.. issues)
+    (Show code, show cursor checklist while its working)
+    (if *ngIf err great, paste it into Cursor)
+    (For later changes, show diffs and "keep" option)
+Convert to reactive forms
+Add validation
+Make the app's styling looks like our website, www.kplknowledge.co.uk
+Make the field titles appear at the left of the input fields, so that the entire input fits the page without needing to scroll down.
+(maybe?:)
+The input fields extend too far right, outside of their container 
+Explain the *ngIf error
+Explain line 15
+  (etc)
+What is the validation rule for phone number
+Change the form "submit" logic so that it sends the data in a POST call to a REST server that will be running on port 8080.
+Add a Python FastAPI backend to recieve and log data that the frontend sends
+Change the backend so that it persists the data to simple .json files
+Add to the frontend another page called "User List" to show a list of users, retrieved from the backend by doing a GET REST call to  localhost:8080/users
+Add a "User List" endpoint  to the backend

@@ -1,0 +1,11 @@
+commit 5514500bfc2e1ed29e2bb6349580e0abee65ef95
+Author: MikeB <mikeb@mycosystems.co.uk>
+Date:   Mon Oct 27 14:09:57 2025 +0000
+
+    Stage02, Copilot fixed small frontend error and backend errors
+
+commit 76bbffe6092a577bc37694fd81eaff0e56962c06
+Author: MikeB <mikeb@mycosystems.co.uk>
+Date:   Mon Oct 27 13:29:45 2025 +0000
+
+    Initial non-working Copilot attempt

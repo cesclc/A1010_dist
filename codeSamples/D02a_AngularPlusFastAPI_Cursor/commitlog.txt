@@ -1,0 +1,12 @@
+Ursula:D04_AngularPlusFastAPI mikeburton$ git log
+commit 9c2bd05c71e55f6388379c2844c99755466a71c3 (HEAD -> master)
+Author: MikeB <mikeb@mycosystems.co.uk>
+Date:   Fri Oct 24 19:14:19 2025 +0100
+
+    Fixed styling (sort of, not as good as D01) and took MANY turns to do it
+
+commit 67d3988a33cd4418eaad7b68325c8d3bebfae4d3
+Author: MikeB <mikeb@mycosystems.co.uk>
+Date:   Fri Oct 24 18:39:16 2025 +0100
+
+    Initial Cursor generated app then it fixed imports any  type errors

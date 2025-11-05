@@ -1,0 +1,53 @@
+## codeSample/ex7_solution02.txt - ABI data format and content
+  
+ABI stands for Advanced Baseline Imager - it's the primary instrument on NOAA's GOES-R series satellites (GOES-16, GOES-17, GOES-18).
+
+  About ABI
+
+  Satellite: GOES-16 (launched 2016, operational over Eastern US/Atlantic)
+
+  Capabilities:
+  - 16 spectral bands (visible, near-IR, infrared)
+  - High spatial resolution (500m - 2km)
+  - Rapid scan rates (every 5-15 minutes for full disk)
+  - Covers Americas, Atlantic, Eastern Pacific
+
+  Band Examples:
+  - Band 1 (0.47 µm): Blue - aerosols, visibility
+  - Band 2 (0.64 µm): Red - clouds, vegetation
+  - Band 3 (0.86 µm): Veggie - vegetation health
+  - Bands 7-16: Infrared - temperature, moisture, atmospheric chemistry
+
+  The Specific Demo Dataset
+
+  Event: Mid-latitude cyclone over US, March 14, 2019
+
+  What's included:
+  filenames = get_us_midlatitude_cyclone_abi()
+  # Downloads 16 NetCDF files - one per ABI spectral band
+
+  Files contain:
+  - Calibrated radiance/reflectance data
+  - Geolocation information
+  - Metadata (time, satellite position, etc.)
+  - Covers CONUS (Continental US) sector
+
+  Size: ~150-200 MB total
+
+  Why this scene?
+  - Classic weather system with clear features
+  - Good for testing/learning satellite imagery
+  - Shows various cloud types and atmospheric structures
+  - Demonstrates multi-spectral analysis capabilities
+
+  Comparison to SEVIRI (your original code)
+
+  | Feature    | ABI (GOES-16) | SEVIRI (Meteosat) |
+  |------------|---------------|-------------------|
+  | Coverage   | Americas      | Europe/Africa     |
+  | Operator   | NOAA (USA)    | EUMETSAT (Europe) |
+  | Bands      | 16            | 12                |
+  | Resolution | 500m-2km      | 1km-3km           |
+  | Scan rate  | 5-15 min      | 15 min            |
+
+  The demo uses ABI because the data is easily accessible via Google Cloud.

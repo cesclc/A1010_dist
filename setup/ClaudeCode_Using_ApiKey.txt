@@ -1,0 +1,11 @@
+$ cat > ~/.claude/settings.json
+{
+  "apiKeyHelper": "/Users/mikeburton/.claude/get-api-key.sh"
+}
+
+$ cat > ~/.claude/get-api-key.sh
+#!/bin/bash
+echo "sk-ant-YOUR_API_KEY"
+
+$ chmod ug+x ~/.claude/get-api-key.sh
+

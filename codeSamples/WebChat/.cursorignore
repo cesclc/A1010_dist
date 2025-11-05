@@ -1,0 +1,13 @@
+# Ignore patterns
+dist/
+ngui/
+pycharm_env/
+.idea/
+*.log
+config.json
+
+# Include only specific files
+!app/
+!app/*/
+!app/**/*/
+!*.py

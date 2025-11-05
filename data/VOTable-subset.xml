@@ -1,0 +1,1060 @@
+<?xml version='1.0'?>
+<VOTABLE version="1.4"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 4.1-3 (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2023-05-05T10:05:24
+ !-->
+<RESOURCE>
+<TABLE name="pLOPS2PICtarget2.0.0.1-t" nrows="179564">
+<FIELD datatype="long" name="PICid" ucd="meta.id;meta.main">
+<DESCRIPTION>Unique PLATO identifier</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="23" datatype="char" name="PICname" ucd="meta.id;meta.main">
+<DESCRIPTION>Unique PLATO name. Format: PIC XXXX n, where XXXX=field identifier and n=PICid</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="28" datatype="char" name="StarName" ucd="meta.id">
+<DESCRIPTION>Star identifier in the catalogue from which the source is selected</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="RAdeg" ucd="pos.eq.ra;meta.main" unit="deg">
+<DESCRIPTION>Barycentric Right Ascension of the source in ICRS at refEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eRAdeg" ucd="stat.error;pos.eq.ra" unit="mas">
+<DESCRIPTION>Standard error of the Right Ascension in ICRS at refEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="DEdeg" ucd="pos.eq.dec;meta.main" unit="deg">
+<DESCRIPTION>Barycentric Declination of the source in ICRS at the refEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eDEdeg" ucd="stat.error;pos.eq.dec" unit="mas">
+<DESCRIPTION>Standard error of Declination in ICRS at the refEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Plx" ucd="pos.parallax.trig" unit="mas">
+<DESCRIPTION>Parallax at refEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="ePlx" ucd="stat.error;pos.parallax.trig" unit="mas">
+<DESCRIPTION>Standard error on parallax at refEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="pmRA" ucd="pos.pm;pos.eq.ra" unit="mas/yr">
+<DESCRIPTION>Proper motion in Right Ascension direction in ICRS at refEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="epmRA" ucd="stat.error;pos.pm;pos.eq.ra" unit="mas/yr">
+<DESCRIPTION>Standard error on proper motion in Right Ascension direction at refEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="pmDE" ucd="pos.pm;pos.eq.dec" unit="mas/yr">
+<DESCRIPTION>Proper motion in Declination direction at refEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="epmDE" ucd="stat.error;pos.pm;pos.eq.dec" unit="mas/yr">
+<DESCRIPTION>Standard error on proper motion in Declination direction at refEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pm" ucd="pos.pm;pos.eq" unit="mas/yr">
+<DESCRIPTION>Total proper motion at refEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="epm" ucd="stat.error;pos.pm;pos.eq" unit="mas/yr">
+<DESCRIPTION>Error on total proper motion at refEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="distance" ucd="pos.distance;pos.eq" unit="pc">
+<DESCRIPTION>Distance of the object</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="eDistance" ucd="stat.error;pos.distance;pos.eq" unit="pc">
+<DESCRIPTION>Error on the distance</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="refEpoch" ucd="meta.ref;time.epoch" unit="julian year">
+<DESCRIPTION>Reference epoch of the original astrometry, in year (Julian) corresponding to 31.5576 Ms = 365.25 d</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="GLON" ucd="pos.galactic.lon" unit="deg">
+<DESCRIPTION>Galactic longitude of the object at RefEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="GLAT" ucd="pos.galactic.lat" unit="deg">
+<DESCRIPTION>Galactic latitude of the object at RefEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="ELON" ucd="pos.ecliptic.lon" unit="deg">
+<DESCRIPTION>Ecliptic longitude of the object at RefEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="ELAT" ucd="pos.ecliptic.lat" unit="deg">
+<DESCRIPTION>Ecliptic latitude of the object at RefEpoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="PlatoMagNCAM" ucd="phot.mag;em.opt" unit="mag">
+<DESCRIPTION>Plato magnitude calculated for NCAM</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="ePlatoMagNCAM" ucd="stat.error;phot.mag;em.opt" unit="mag">
+<DESCRIPTION>Error on Plato magnitude calculated for NCAM</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="PlatoMagFCAMb" ucd="phot.mag;em.opt" unit="mag">
+<DESCRIPTION>Plato magnitude calculated for FCAM blue</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="ePlatoMagFCAMb" ucd="stat.error;phot.mag;em.opt" unit="mag">
+<DESCRIPTION>Error on Plato magnitude calculated for FCAM blue</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="PlatoMagFCAMr" ucd="phot.mag;em.opt" unit="mag">
+<DESCRIPTION>Plato magnitude calculated for FCAM red</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="ePlatoMagFCAMr" ucd="stat.error;phot.mag;em.opt" unit="mag">
+<DESCRIPTION>Error on Plato magnitude calculated for FCAM red</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Gmag" ucd="phot.mag;em.opt" unit="mag">
+<DESCRIPTION>Mean magnitude in the G band. NB: CORRECTED following Riello et al. 2021</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eGmag" ucd="stat.error;phot.mag;em.opt" unit="mag">
+<DESCRIPTION>Error on mean magnitude in the G band</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="BPmag" ucd="phot.mag;em.opt.B" unit="mag">
+<DESCRIPTION>Mean magnitude in the integrated BP band. NB: CORRECTED following Riello et al. 2021</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eBPmag" ucd="stat.error;phot.mag;em.opt.B" unit="mag">
+<DESCRIPTION>Error on mean magnitude in the integrated BP band</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="RPmag" ucd="phot.mag;em.opt.R" unit="mag">
+<DESCRIPTION>Mean magnitude in the integrated RP band. NB: CORRECTED following Riello et al.</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eRPmag" ucd="stat.error;phot.mag;em.opt.R" unit="mag">
+<DESCRIPTION>Error on mean magnitude in the integrated RP band</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Ksmag" ucd="phot.mag;em.IR.K" unit="mag">
+<DESCRIPTION>Magnitude in the Ks band in the 2MASS PSC catalogue</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eKsmag" ucd="stat.error;phot.mag;em.IR.K" unit="mag">
+<DESCRIPTION>Error on Ks magnitude in the 2MASS PSC catalogue</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="AG" ucd="phys.absorpion;em.opt" unit="mag">
+<DESCRIPTION>Extinction in the G band</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eAG" ucd="stat.error;phys.absorpion;em.opt" unit="mag">
+<DESCRIPTION>Error on the extinction in the G band</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="EBPRP" ucd="phot.color.excess" unit="mag">
+<DESCRIPTION>Reddening E(BP-RP)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eEBPRP" ucd="stat.error;phot.color.excess" unit="mag">
+<DESCRIPTION>Error on reddening E(BP-RP)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="extStatus" ucd="meta.code.status">
+<DESCRIPTION>Flag indicating if the star is inside (=0) or outside (=1) the limits of the reddening map</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="BPRP0" ucd="phot.color.reddFree;em.opt.B;em.opt.R" unit="mag">
+<DESCRIPTION>Dereddened color (BP-RP)0</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eBPRP0" ucd="stat.error;phot.color.reddFree;em.opt.B;em.opt.R" unit="mag">
+<DESCRIPTION>Error on dereddened color (BP-RP)0</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="V0mag" ucd="phot.mag.reddFree;em.opt.V" unit="mag">
+<DESCRIPTION>Dereddened apparent magnitude in the Johnson-Cousin V filter (derived from Gaia data)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eV0mag" ucd="stat.error;phot.mag.reddFree;em.opt.V" unit="mag">
+<DESCRIPTION>Error on dereddened apparent magnitude in the Johnson-Cousin V filter</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Vmag" ucd="phot.mag;em.opt.V" unit="mag">
+<DESCRIPTION>Apparent magnitude in the in the Johnson-Cousin V filter (derived from Gaia data)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eVmag" ucd="stat.error;phot.mag;em.opt.V" unit="mag">
+<DESCRIPTION>Error on apparent magnitude  in the in the Johnson-Cousin V filter</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="MG0" ucd="phys.magAbs;em.opt" unit="mag">
+<DESCRIPTION>Absolute intrinsic G magnitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eMG0" ucd="stat.error;phys.magAbs;em.opt" unit="mag">
+<DESCRIPTION>Error on absolute intrinsic G magnitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Teff" ucd="phys.temperature.effective" unit="K">
+<DESCRIPTION>Stellar effective temperature</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eTeff" ucd="stat.error;phys.temperature.effective" unit="K">
+<DESCRIPTION>Error on stellar effective temperature</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Radius" ucd="phys.size.radius" unit="solRad">
+<DESCRIPTION>Stellar radius</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eRadius" ucd="stat.error;phys.size.radius" unit="solRad">
+<DESCRIPTION>Error on stellar radius</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Mass" ucd="phys.mass" unit="solMass">
+<DESCRIPTION>Stellar mass</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="eMass" ucd="stat.error;phys.mass" unit="solMass">
+<DESCRIPTION>Error on stellar mass</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="BOLsourceFlag" ucd="meta.code.class">
+<DESCRIPTION>Bitmask indicating to which sample an object belongs to, in case the NSR is calculated at Beginning of life</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="EOLsourceFlag" ucd="meta.code.class">
+<DESCRIPTION>Bitmask indicating to which sample an object belongs to, in case the NSR is calculated at End Of Life (22 cameras)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="EOL24sourceFlag" ucd="meta.code.class">
+<DESCRIPTION>Bitmask indicating to which sample an object belongs to, in case the NSR is calculated at End Of Life (all 24 cameras)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="NSSflag" ucd="meta.code.multip">
+<DESCRIPTION>Bitmask indicating the presence of binary/multiple stellar system (NSS=non-single star)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="qualityFlag" ucd="meta.code.qual">
+<DESCRIPTION>Bitmask containing indicators for issues in Gaia astrometry and photometry</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="statusFlag" ucd="meta.code.status">
+<DESCRIPTION>Flag indicating history status of a given target</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="BOLrandomNSR" ucd="stat.snr;phot.flux;em.opt" unit="ppm/sqrt(h)">
+<DESCRIPTION>BOL random NSR [ppm], system level in 1h</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="BOLrandomSysNSR" ucd="stat.snr;phot.flux;em.opt" unit="ppm/sqrt(h)">
+<DESCRIPTION>BOL random + systematic NSR [ppm], system level in 1h</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="BOLnCameraObs" ucd="meta.number">
+<DESCRIPTION>BOL number of cameras seeing the star</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="BOLnCameraSat" ucd="meta.number">
+<DESCRIPTION>BOL number of cameras getting saturated</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="EOLrandomNSR" ucd="stat.snr;phot.flux;em.opt" unit="ppm/sqrt(h)">
+<DESCRIPTION>EOL random NSR [ppm], system level in 1h (22 cameras)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="EOLrandomSysNSR" ucd="stat.snr;phot.flux;em.opt" unit="ppm/sqrt(h)">
+<DESCRIPTION>EOL random + systematic NSR [ppm], system level in 1h (22 cameras)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="EOLnCameraObs" ucd="meta.number">
+<DESCRIPTION>EOL number of cameras seeing the star (22 cameras).</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="EOLnCameraSat" ucd="meta.number">
+<DESCRIPTION>EOL number of cameras getting saturated (22 cameras)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="EOL24randomNSR" ucd="stat.snr;phot.flux;em.opt" unit="ppm/sqrt(h)">
+<DESCRIPTION>EOL random NSR [ppm], system level in 1h (all 24 cameras)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="EOL24randomSysNSR" ucd="stat.snr;phot.flux;em.opt" unit="ppm/sqrt(h)">
+<DESCRIPTION>EOL random + systematic NSR [ppm], system level in 1h (all 24 cameras)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="EOL24nCameraObs" ucd="meta.number">
+<DESCRIPTION>EOL number of cameras seeing the star (all 24 cameras)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="EOL24nCameraSat" ucd="meta.number">
+<DESCRIPTION>EOL number of cameras getting saturated (all 24 cameras)</DESCRIPTION>
+</FIELD>
+<DATA>
+<TABLEDATA>
+  <TR>
+    <TD>2761533000026</TD>
+    <TD>PIC LOPS2 276153300002</TD>
+    <TD>Gaia DR3 4785713458992582272</TD>
+    <TD>75.70255975133574</TD>
+    <TD>0.0397311</TD>
+    <TD>-49.15128404372467</TD>
+    <TD>0.0368556</TD>
+    <TD>38.09408938610385</TD>
+    <TD>0.038044</TD>
+    <TD>-43.98480046587578</TD>
+    <TD>0.0544729</TD>
+    <TD>27.51858595708385</TD>
+    <TD>0.045326</TD>
+    <TD>51.8839</TD>
+    <TD>0.0034193</TD>
+    <TD>26.2403</TD>
+    <TD>0.0232296</TD>
+    <TD>2016.0</TD>
+    <TD>255.63607801942018</TD>
+    <TD>-37.634024553715</TD>
+    <TD>60.07452004547484</TD>
+    <TD>-71.10838138179352</TD>
+    <TD>5.09678</TD>
+    <TD>0.001778</TD>
+    <TD>5.24842</TD>
+    <TD>0.002778</TD>
+    <TD>4.90901</TD>
+    <TD>0.00135</TD>
+    <TD>5.28174</TD>
+    <TD>6.05805E-4</TD>
+    <TD>5.48961</TD>
+    <TD>0.00141253</TD>
+    <TD>4.90633</TD>
+    <TD>0.00362374</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>0.002471</TD>
+    <TD>0.001802</TD>
+    <TD>0.001226</TD>
+    <TD>8.94E-4</TD>
+    <TD>0</TD>
+    <TD>0.582054</TD>
+    <TD>0.00399073</TD>
+    <TD>5.37259</TD>
+    <TD>0.00269195</TD>
+    <TD>5.37533</TD>
+    <TD>0.0033524</TD>
+    <TD>3.18443</TD>
+    <TD>0.00270362</TD>
+    <TD>6521.45</TD>
+    <TD>180.152</TD>
+    <TD>1.53946</TD>
+    <TD>0.082779</TD>
+    <TD>1.34386</TD>
+    <TD>0.116498</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>0</TD>
+    <TD>128</TD>
+    <TD>0</TD>
+    <TD>4.349</TD>
+    <TD>10.11</TD>
+    <TD>12</TD>
+    <TD>12</TD>
+    <TD>4.596</TD>
+    <TD>10.23</TD>
+    <TD>11</TD>
+    <TD>11</TD>
+    <TD>4.4</TD>
+    <TD>10.14</TD>
+    <TD>12</TD>
+    <TD>12</TD>
+  </TR>
+  <TR>
+    <TD>2787400000022</TD>
+    <TD>PIC LOPS2 278740000002</TD>
+    <TD>Gaia DR3 4772547941122028672</TD>
+    <TD>79.8423924881069</TD>
+    <TD>0.0438105</TD>
+    <TD>-50.60495484354134</TD>
+    <TD>0.0478174</TD>
+    <TD>27.869370365417826</TD>
+    <TD>0.0468733</TD>
+    <TD>23.314413694103166</TD>
+    <TD>0.0559249</TD>
+    <TD>227.76790604631572</TD>
+    <TD>0.0692933</TD>
+    <TD>228.958</TD>
+    <TD>0.00464034</TD>
+    <TD>35.8782</TD>
+    <TD>0.0680199</TD>
+    <TD>2016.0</TD>
+    <TD>257.46119956763056</TD>
+    <TD>-34.976180676531825</TD>
+    <TD>67.16188387397263</TD>
+    <TD>-73.23926498592914</TD>
+    <TD>5.10928</TD>
+    <TD>0.002416</TD>
+    <TD>5.29049</TD>
+    <TD>0.003243</TD>
+    <TD>4.89131</TD>
+    <TD>0.001674</TD>
+    <TD>5.31857</TD>
+    <TD>6.94969E-4</TD>
+    <TD>5.56928</TD>
+    <TD>8.35342E-4</TD>
+    <TD>4.89246</TD>
+    <TD>0.00212654</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>0.00296</TD>
+    <TD>0.00209</TD>
+    <TD>0.001464</TD>
+    <TD>0.001034</TD>
+    <TD>0</TD>
+    <TD>0.675356</TD>
+    <TD>0.00250782</TD>
+    <TD>5.4289</TD>
+    <TD>0.00278442</TD>
+    <TD>5.43223</TD>
+    <TD>0.00364227</TD>
+    <TD>2.54146</TD>
+    <TD>0.00466895</TD>
+    <TD>6179.17</TD>
+    <TD>207.347</TD>
+    <TD>2.30214</TD>
+    <TD>0.160223</TD>
+    <TD>1.47243</TD>
+    <TD>0.127716</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>0</TD>
+    <TD>128</TD>
+    <TD>0</TD>
+    <TD>3.197</TD>
+    <TD>9.638</TD>
+    <TD>24</TD>
+    <TD>24</TD>
+    <TD>3.377</TD>
+    <TD>9.703</TD>
+    <TD>22</TD>
+    <TD>22</TD>
+    <TD>3.234</TD>
+    <TD>9.65</TD>
+    <TD>24</TD>
+    <TD>24</TD>
+  </TR>
+  <TR>
+    <TD>2809154000107</TD>
+    <TD>PIC LOPS2 280915400010</TD>
+    <TD>Gaia DR3 5502372732796307200</TD>
+    <TD>97.82711247415092</TD>
+    <TD>0.0411516</TD>
+    <TD>-51.82549525968892</TD>
+    <TD>0.0479361</TD>
+    <TD>27.12171633595461</TD>
+    <TD>0.0476063</TD>
+    <TD>102.0137432757737</TD>
+    <TD>0.0537961</TD>
+    <TD>104.5772757935072</TD>
+    <TD>0.0538905</TD>
+    <TD>146.093</TD>
+    <TD>0.0030967</TD>
+    <TD>36.8549</TD>
+    <TD>0.0716305</TD>
+    <TD>2016.0</TD>
+    <TD>260.56048192495393</TD>
+    <TD>-23.998598440201672</TD>
+    <TD>108.67207280984617</TD>
+    <TD>-74.75735972692627</TD>
+    <TD>5.24433</TD>
+    <TD>0.002565</TD>
+    <TD>5.43443</TD>
+    <TD>0.003409</TD>
+    <TD>5.01762</TD>
+    <TD>0.001806</TD>
+    <TD>5.46038</TD>
+    <TD>6.46572E-4</TD>
+    <TD>5.72255</TD>
+    <TD>9.24558E-4</TD>
+    <TD>5.01862</TD>
+    <TD>0.00201388</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>0.003076</TD>
+    <TD>0.002198</TD>
+    <TD>0.00152</TD>
+    <TD>0.001086</TD>
+    <TD>0</TD>
+    <TD>0.70241</TD>
+    <TD>0.00246777</TD>
+    <TD>5.57703</TD>
+    <TD>0.00289306</TD>
+    <TD>5.5805</TD>
+    <TD>0.00381053</TD>
+    <TD>2.62483</TD>
+    <TD>0.00480222</TD>
+    <TD>6086.41</TD>
+    <TD>189.639</TD>
+    <TD>2.28453</TD>
+    <TD>0.148332</TD>
+    <TD>1.44543</TD>
+    <TD>0.125334</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>0</TD>
+    <TD>128</TD>
+    <TD>0</TD>
+    <TD>3.325</TD>
+    <TD>9.681</TD>
+    <TD>24</TD>
+    <TD>24</TD>
+    <TD>3.514</TD>
+    <TD>9.751</TD>
+    <TD>22</TD>
+    <TD>22</TD>
+    <TD>3.364</TD>
+    <TD>9.695</TD>
+    <TD>24</TD>
+    <TD>24</TD>
+  </TR>
+  <TR>
+    <TD>2784047000097</TD>
+    <TD>PIC LOPS2 278404700009</TD>
+    <TD>Gaia DR3 4794180076484107520</TD>
+    <TD>88.54570791990501</TD>
+    <TD>0.0157747</TD>
+    <TD>-50.360111093547</TD>
+    <TD>0.0164012</TD>
+    <TD>28.003288951635795</TD>
+    <TD>0.0167014</TD>
+    <TD>93.7368550456012</TD>
+    <TD>0.0207883</TD>
+    <TD>548.8095923121366</TD>
+    <TD>0.0213765</TD>
+    <TD>556.757</TD>
+    <TD>4.77798E-4</TD>
+    <TD>35.7012</TD>
+    <TD>0.0207691</TD>
+    <TD>2016.0</TD>
+    <TD>257.7122079188753</TD>
+    <TD>-29.43999042323953</TD>
+    <TD>86.67651353639846</TD>
+    <TD>-73.78261445925997</TD>
+    <TD>5.99914</TD>
+    <TD>0.002227</TD>
+    <TD>6.32591</TD>
+    <TD>0.003198</TD>
+    <TD>5.65571</TD>
+    <TD>0.001569</TD>
+    <TD>6.29434</TD>
+    <TD>1.87723E-4</TD>
+    <TD>6.73778</TD>
+    <TD>0.00171388</TD>
+    <TD>5.66725</TD>
+    <TD>0.00139336</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>0.002822</TD>
+    <TD>0.001874</TD>
+    <TD>0.001368</TD>
+    <TD>9.08E-4</TD>
+    <TD>0</TD>
+    <TD>1.06916</TD>
+    <TD>0.00238815</TD>
+    <TD>6.53473</TD>
+    <TD>0.00291139</TD>
+    <TD>6.53807</TD>
+    <TD>0.00366123</TD>
+    <TD>3.52811</TD>
+    <TD>0.0022678</TD>
+    <TD>5072.99</TD>
+    <TD>177.657</TD>
+    <TD>2.26656</TD>
+    <TD>0.202429</TD>
+    <TD>1.19931</TD>
+    <TD>0.103427</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>0</TD>
+    <TD>128</TD>
+    <TD>0</TD>
+    <TD>4.758</TD>
+    <TD>10.26</TD>
+    <TD>24</TD>
+    <TD>24</TD>
+    <TD>5.037</TD>
+    <TD>10.4</TD>
+    <TD>22</TD>
+    <TD>22</TD>
+    <TD>4.822</TD>
+    <TD>10.29</TD>
+    <TD>24</TD>
+    <TD>24</TD>
+  </TR>
+  <TR>
+    <TD>2768594000018</TD>
+    <TD>PIC LOPS2 276859400001</TD>
+    <TD>Gaia DR3 5553178244538085888</TD>
+    <TD>92.34752944944232</TD>
+    <TD>0.0325924</TD>
+    <TD>-49.562496675890955</TD>
+    <TD>0.0344525</TD>
+    <TD>16.384388174378934</TD>
+    <TD>0.034848</TD>
+    <TD>-10.796244100848028</TD>
+    <TD>0.0422732</TD>
+    <TD>75.24525614630225</TD>
+    <TD>0.0401407</TD>
+    <TD>76.0158</TD>
+    <TD>0.00168869</TD>
+    <TD>61.0333</TD>
+    <TD>0.123615</TD>
+    <TD>2016.0</TD>
+    <TD>257.28189178276824</TD>
+    <TD>-26.895952922580513</TD>
+    <TD>95.20160535375726</TD>
+    <TD>-72.9593910815828</TD>
+    <TD>6.17225</TD>
+    <TD>0.003727</TD>
+    <TD>6.34587</TD>
+    <TD>0.004528</TD>
+    <TD>5.96185</TD>
+    <TD>0.002935</TD>
+    <TD>6.37556</TD>
+    <TD>2.22752E-4</TD>
+    <TD>6.61276</TD>
+    <TD>7.05729E-4</TD>
+    <TD>5.95945</TD>
+    <TD>9.12713E-4</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>0.004179</TD>
+    <TD>0.003063</TD>
+    <TD>0.002069</TD>
+    <TD>0.001516</TD>
+    <TD>0</TD>
+    <TD>0.651241</TD>
+    <TD>0.00190509</TD>
+    <TD>6.4792</TD>
+    <TD>0.00349425</TD>
+    <TD>6.48388</TD>
+    <TD>0.0048964</TD>
+    <TD>2.44354</TD>
+    <TD>0.00536418</TD>
+    <TD>6264.25</TD>
+    <TD>202.999</TD>
+    <TD>2.34305</TD>
+    <TD>0.15168</TD>
+    <TD>1.50324</TD>
+    <TD>0.130469</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>16</TD>
+    <TD>136</TD>
+    <TD>0</TD>
+    <TD>4.909</TD>
+    <TD>10.33</TD>
+    <TD>24</TD>
+    <TD>24</TD>
+    <TD>5.198</TD>
+    <TD>10.48</TD>
+    <TD>22</TD>
+    <TD>22</TD>
+    <TD>4.976</TD>
+    <TD>10.37</TD>
+    <TD>24</TD>
+    <TD>24</TD>
+  </TR>
+  <TR>
+    <TD>2809266000285</TD>
+    <TD>PIC LOPS2 280926600028</TD>
+    <TD>Gaia DR3 5513068369598665984</TD>
+    <TD>122.3750069887917</TD>
+    <TD>0.0134582</TD>
+    <TD>-51.84260870764757</TD>
+    <TD>0.0122778</TD>
+    <TD>17.409885791526644</TD>
+    <TD>0.0136767</TD>
+    <TD>-48.00600453388378</TD>
+    <TD>0.0173079</TD>
+    <TD>32.61803850765217</TD>
+    <TD>0.0149503</TD>
+    <TD>58.0389</TD>
+    <TD>2.767E-4</TD>
+    <TD>57.4172</TD>
+    <TD>0.039505</TD>
+    <TD>2016.0</TD>
+    <TD>266.6724605247471</TD>
+    <TD>-10.070597858421255</TD>
+    <TD>153.35949167732818</TD>
+    <TD>-68.27753389137868</TD>
+    <TD>6.17214</TD>
+    <TD>0.003718</TD>
+    <TD>6.37958</TD>
+    <TD>0.004646</TD>
+    <TD>5.92886</TD>
+    <TD>0.002862</TD>
+    <TD>6.40068</TD>
+    <TD>2.04964E-4</TD>
+    <TD>6.68702</TD>
+    <TD>0.00142554</TD>
+    <TD>5.93161</TD>
+    <TD>8.66115E-4</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>0.004495</TD>
+    <TD>0.003069</TD>
+    <TD>0.002215</TD>
+    <TD>0.001513</TD>
+    <TD>0</TD>
+    <TD>0.753195</TD>
+    <TD>0.002252</TD>
+    <TD>6.5289</TD>
+    <TD>0.00367925</TD>
+    <TD>6.53401</TD>
+    <TD>0.00506913</TD>
+    <TD>2.60097</TD>
+    <TD>0.0034195</TD>
+    <TD>5919.73</TD>
+    <TD>218.415</TD>
+    <TD>2.44669</TD>
+    <TD>0.179143</TD>
+    <TD>1.44049</TD>
+    <TD>0.124901</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>0</TD>
+    <TD>160</TD>
+    <TD>0</TD>
+    <TD>7.219</TD>
+    <TD>11.64</TD>
+    <TD>12</TD>
+    <TD>12</TD>
+    <TD>7.666</TD>
+    <TD>11.93</TD>
+    <TD>11</TD>
+    <TD>11</TD>
+    <TD>7.318</TD>
+    <TD>11.7</TD>
+    <TD>12</TD>
+    <TD>12</TD>
+  </TR>
+  <TR>
+    <TD>2785875000326</TD>
+    <TD>PIC LOPS2 278587500032</TD>
+    <TD>Gaia DR3 5493209501673364736</TD>
+    <TD>116.05133455123536</TD>
+    <TD>0.0127856</TD>
+    <TD>-50.456088282909235</TD>
+    <TD>0.0139013</TD>
+    <TD>33.285792092109375</TD>
+    <TD>0.0142547</TD>
+    <TD>-114.34423196074778</TD>
+    <TD>0.0171985</TD>
+    <TD>143.56570615352388</TD>
+    <TD>0.0183582</TD>
+    <TD>183.537</TD>
+    <TD>2.99402E-4</TD>
+    <TD>30.0394</TD>
+    <TD>0.0142002</TD>
+    <TD>2016.0</TD>
+    <TD>263.4541420465798</TD>
+    <TD>-12.844998634622687</TD>
+    <TD>142.05228018154358</TD>
+    <TD>-69.23242554572117</TD>
+    <TD>6.3096</TD>
+    <TD>0.002801</TD>
+    <TD>6.49238</TD>
+    <TD>0.003657</TD>
+    <TD>6.09007</TD>
+    <TD>0.002011</TD>
+    <TD>6.5201</TD>
+    <TD>3.05284E-4</TD>
+    <TD>6.77059</TD>
+    <TD>0.00159282</TD>
+    <TD>6.08894</TD>
+    <TD>0.00144327</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>0.002834</TD>
+    <TD>0.00242</TD>
+    <TD>0.001401</TD>
+    <TD>0.001197</TD>
+    <TD>0</TD>
+    <TD>0.680249</TD>
+    <TD>0.00246026</TD>
+    <TD>6.6317</TD>
+    <TD>0.0030152</TD>
+    <TD>6.63489</TD>
+    <TD>0.0040621</TD>
+    <TD>4.12881</TD>
+    <TD>0.00264637</TD>
+    <TD>6162.19</TD>
+    <TD>197.683</TD>
+    <TD>1.11451</TD>
+    <TD>0.065193</TD>
+    <TD>1.12472</TD>
+    <TD>0.097573</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>2</TD>
+    <TD>128</TD>
+    <TD>0</TD>
+    <TD>7.452</TD>
+    <TD>11.79</TD>
+    <TD>12</TD>
+    <TD>12</TD>
+    <TD>7.912</TD>
+    <TD>12.09</TD>
+    <TD>11</TD>
+    <TD>11</TD>
+    <TD>7.559</TD>
+    <TD>11.85</TD>
+    <TD>12</TD>
+    <TD>12</TD>
+  </TR>
+  <TR>
+    <TD>2802623000303</TD>
+    <TD>PIC LOPS2 280262300030</TD>
+    <TD>Gaia DR3 5493588665684618752</TD>
+    <TD>111.85405211571336</TD>
+    <TD>0.0120986</TD>
+    <TD>-51.402609641760776</TD>
+    <TD>0.0160437</TD>
+    <TD>44.512158869858446</TD>
+    <TD>0.0142155</TD>
+    <TD>-287.5855845465507</TD>
+    <TD>0.018234</TD>
+    <TD>-2.0686097065441054</TD>
+    <TD>0.0235316</TD>
+    <TD>287.593</TD>
+    <TD>3.32176E-4</TD>
+    <TD>22.4633</TD>
+    <TD>0.00710011</TD>
+    <TD>2016.0</TD>
+    <TD>263.1505411313371</TD>
+    <TD>-15.638740512624983</TD>
+    <TD>136.5026033895929</TD>
+    <TD>-71.32938173720612</TD>
+    <TD>6.30059</TD>
+    <TD>0.002188</TD>
+    <TD>6.54713</TD>
+    <TD>0.002782</TD>
+    <TD>6.02196</TD>
+    <TD>0.00168</TD>
+    <TD>6.55436</TD>
+    <TD>1.87204E-4</TD>
+    <TD>6.89436</TD>
+    <TD>8.24508E-4</TD>
+    <TD>6.0286</TD>
+    <TD>6.90316E-4</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>0.002052</TD>
+    <TD>0.001789</TD>
+    <TD>0.001005</TD>
+    <TD>8.76E-4</TD>
+    <TD>0</TD>
+    <TD>0.864755</TD>
+    <TD>0.00138698</TD>
+    <TD>6.71809</TD>
+    <TD>0.00225011</TD>
+    <TD>6.72046</TD>
+    <TD>0.00305405</TD>
+    <TD>4.79495</TD>
+    <TD>0.00192526</TD>
+    <TD>5585.48</TD>
+    <TD>232.798</TD>
+    <TD>1.00965</TD>
+    <TD>0.092087</TD>
+    <TD>0.980797</TD>
+    <TD>0.084903</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>0</TD>
+    <TD>160</TD>
+    <TD>0</TD>
+    <TD>6.208</TD>
+    <TD>11.02</TD>
+    <TD>18</TD>
+    <TD>18</TD>
+    <TD>6.49</TD>
+    <TD>11.18</TD>
+    <TD>17</TD>
+    <TD>17</TD>
+    <TD>6.296</TD>
+    <TD>11.07</TD>
+    <TD>18</TD>
+    <TD>18</TD>
+  </TR>
+  <TR>
+    <TD>2768785000027</TD>
+    <TD>PIC LOPS2 276878500002</TD>
+    <TD>Gaia DR3 5328000290404075264</TD>
+    <TD>132.00316881718436</TD>
+    <TD>0.0435568</TD>
+    <TD>-49.575131452036025</TD>
+    <TD>0.0455304</TD>
+    <TD>23.151702227780614</TD>
+    <TD>0.0495965</TD>
+    <TD>-27.043709600879193</TD>
+    <TD>0.0595071</TD>
+    <TD>-64.71358654068649</TD>
+    <TD>0.0563192</TD>
+    <TD>70.1371</TD>
+    <TD>0.00321151</TD>
+    <TD>43.1858</TD>
+    <TD>0.0960999</TD>
+    <TD>2016.0</TD>
+    <TD>268.3490694792602</TD>
+    <TD>-3.7880537794254474</TD>
+    <TD>162.20273175162427</TD>
+    <TD>-62.88780221930994</TD>
+    <TD>6.43499</TD>
+    <TD>0.003023</TD>
+    <TD>6.5849</TD>
+    <TD>0.003641</TD>
+    <TD>6.24907</TD>
+    <TD>0.002383</TD>
+    <TD>6.61841</TD>
+    <TD>1.92548E-4</TD>
+    <TD>6.82358</TD>
+    <TD>6.23381E-4</TD>
+    <TD>6.24604</TD>
+    <TD>5.95446E-4</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>0.003668</TD>
+    <TD>0.002497</TD>
+    <TD>0.001819</TD>
+    <TD>0.001239</TD>
+    <TD>0</TD>
+    <TD>0.575721</TD>
+    <TD>0.0015094</TD>
+    <TD>6.70681</TD>
+    <TD>0.00280082</TD>
+    <TD>6.71088</TD>
+    <TD>0.00393641</TD>
+    <TD>3.43803</TD>
+    <TD>0.00544255</TD>
+    <TD>6546.0</TD>
+    <TD>195.181</TD>
+    <TD>1.35983</TD>
+    <TD>0.077606</TD>
+    <TD>1.28909</TD>
+    <TD>0.111969</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>8</TD>
+    <TD>128</TD>
+    <TD>0</TD>
+    <TD>11.3</TD>
+    <TD>14.57</TD>
+    <TD>6</TD>
+    <TD>6</TD>
+    <TD>12.53</TD>
+    <TD>15.57</TD>
+    <TD>5</TD>
+    <TD>5</TD>
+    <TD>11.44</TD>
+    <TD>14.69</TD>
+    <TD>6</TD>
+    <TD>6</TD>
+  </TR>
+  <TR>
+    <TD>2467489000191</TD>
+    <TD>PIC LOPS2 246748900019</TD>
+    <TD>Gaia DR3 5593584059914156800</TD>
+    <TD>118.06419139640802</TD>
+    <TD>0.0482643</TD>
+    <TD>-34.70437853685907</TD>
+    <TD>0.0594115</TD>
+    <TD>54.563099523190026</TD>
+    <TD>0.0664962</TD>
+    <TD>-198.09607031167099</TD>
+    <TD>0.065526</TD>
+    <TD>238.81180023957108</TD>
+    <TD>0.0779387</TD>
+    <TD>310.279</TD>
+    <TD>0.00484047</TD>
+    <TD>18.3209</TD>
+    <TD>0.0208197</TD>
+    <TD>2016.0</TD>
+    <TD>250.26266474547688</TD>
+    <TD>-3.8830170094574927</TD>
+    <TD>131.3737191354309</TD>
+    <TD>-54.186333399374256</TD>
+    <TD>4.76456</TD>
+    <TD>0.002041</TD>
+    <TD>4.92095</TD>
+    <TD>0.002601</TD>
+    <TD>4.5718</TD>
+    <TD>0.001484</TD>
+    <TD>4.95365</TD>
+    <TD>6.13722E-4</TD>
+    <TD>5.17253</TD>
+    <TD>6.60484E-4</TD>
+    <TD>4.57381</TD>
+    <TD>0.00122777</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>0.001731</TD>
+    <TD>0.001714</TD>
+    <TD>8.58E-4</TD>
+    <TD>8.5E-4</TD>
+    <TD>0</TD>
+    <TD>0.597862</TD>
+    <TD>0.00163284</TD>
+    <TD>5.04841</TD>
+    <TD>0.00215198</TD>
+    <TD>5.05033</TD>
+    <TD>0.00287403</TD>
+    <TD>3.63718</TD>
+    <TD>0.00306654</TD>
+    <TD>6460.93</TD>
+    <TD>190.02</TD>
+    <TD>1.2725</TD>
+    <TD>0.07752</TD>
+    <TD>1.24079</TD>
+    <TD>0.107616</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>2</TD>
+    <TD>130</TD>
+    <TD>0</TD>
+    <TD>3.982</TD>
+    <TD>9.961</TD>
+    <TD>12</TD>
+    <TD>12</TD>
+    <TD>4.197</TD>
+    <TD>10.06</TD>
+    <TD>11</TD>
+    <TD>11</TD>
+    <TD>4.024</TD>
+    <TD>9.978</TD>
+    <TD>12</TD>
+    <TD>12</TD>
+  </TR>
+  <TR>
+    <TD>2714737000028</TD>
+    <TD>PIC LOPS2 271473700002</TD>
+    <TD>Gaia DR3 5557816190743628416</TD>
+    <TD>102.47756207116845</TD>
+    <TD>0.0713574</TD>
+    <TD>-46.612900315158655</TD>
+    <TD>0.0686168</TD>
+    <TD>39.66652033814636</TD>
+    <TD>0.0708346</TD>
+    <TD>-0.9318060137511992</TD>
+    <TD>0.0899832</TD>
+    <TD>373.786419814021</TD>
+    <TD>0.0952544</TD>
+    <TD>373.788</TD>
+    <TD>0.00906172</TD>
+    <TD>25.2012</TD>
+    <TD>0.0376701</TD>
+    <TD>2016.0</TD>
+    <TD>256.1160678128647</TD>
+    <TD>-19.600019028202436</TD>
+    <TD>114.45948939671565</TD>
+    <TD>-68.99512080703263</TD>
+    <TD>4.8282</TD>
+    <TD>0.002433</TD>
+    <TD>4.99334</TD>
+    <TD>0.003538</TD>
+    <TD>4.62641</TD>
+    <TD>0.001612</TD>
+    <TD>5.02464</TD>
+    <TD>8.56901E-4</TD>
+    <TD>5.25583</TD>
+    <TD>9.18294E-4</TD>
+    <TD>4.62915</TD>
+    <TD>0.00359349</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>0.002467</TD>
+    <TD>0.002265</TD>
+    <TD>0.001222</TD>
+    <TD>0.001123</TD>
+    <TD>0</TD>
+    <TD>0.625458</TD>
+    <TD>0.00387525</TD>
+    <TD>5.12439</TD>
+    <TD>0.00324457</TD>
+    <TD>5.12715</TD>
+    <TD>0.00411193</TD>
+    <TD>3.01506</TD>
+    <TD>0.0040497</TD>
+    <TD>6357.79</TD>
+    <TD>228.172</TD>
+    <TD>1.7487</TD>
+    <TD>0.126575</TD>
+    <TD>1.37112</TD>
+    <TD>0.119172</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>14</TD>
+    <TD>0</TD>
+    <TD>128</TD>
+    <TD>0</TD>
+    <TD>2.787</TD>
+    <TD>9.51</TD>
+    <TD>24</TD>
+    <TD>24</TD>
+    <TD>2.944</TD>
+    <TD>9.56</TD>
+    <TD>22</TD>
+    <TD>22</TD>
+    <TD>2.818</TD>
+    <TD>9.519</TD>
+    <TD>24</TD>
+    <TD>24</TD>
+  </TR>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>

@@ -1,0 +1,17 @@
+For ch09 demos & trials...
+
+Mixed platform "challenging" query for "benchmark" is:
+
+Write an app that lets users chat to an AI LLM, Claude for now.
+App should be created in the ~/Temp/work06 directory.
+UI should be written in Angular and should have:
+- text area for user to type their prompt
+- Button "Send" to send their prompt to Claude, via the backend of the app see below. The user's "send" request should invoke a REST endpoint of "localhost:3000/query sending the users query as a POST
+- Larger text area to display results that come back from Claude, with a footer at the bottom of the page to show number of input & output tokens.
+- Add more of these text areas as the user types more context for the conversation.
+- "Settings" button which displays a panel allowing user to choose which model they use
+
+Backend should be written in Python & Flask, and should interact with both the UI and the LLM.
+It should implement a rest point like localhost:3000/query for the UI to send queries to.
+It should send the query to the Claude API, and stream the results to the UI rather than waiting for the whole query to complete before starting to display the reply on the UI.
+Claude API key will be provided in an environment variable.
