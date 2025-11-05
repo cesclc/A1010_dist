@@ -1,5 +1,0 @@
-.form-row label{display:block}
-@media(min-width:700px){
-  .form-row{align-items:center}
-  .form-row label{width:200px}
-}
